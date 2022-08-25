@@ -46,8 +46,9 @@
         "yup": "^0.32.11"
     },
     "scripts": {
+        "eslint:disable": "REACT_APP_DEV_DISABLE_ESLINT=true",
         "start": "react-scripts start",
-        "build": "GENERATE_SOURCEMAP=false react-scripts build",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },

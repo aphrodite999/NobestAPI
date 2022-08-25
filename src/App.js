@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 // project import
 import { Navigate, Route } from 'react-router-dom';
 import Routes from 'routes';

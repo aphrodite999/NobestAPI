@@ -69,6 +69,10 @@ const MainRouter = () => {
             element: <Login />
         },
         {
+            path: '/free',
+            element: <Login />
+        },
+        {
             path: '*',
             element: <NotFound />
         }
