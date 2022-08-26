@@ -9,7 +9,6 @@ import Login from './pages/authentication/Login';
 import './common_ts/firebase_auth';
 import { useGlobalContext } from './context';
 import MainRouter from './routes/MainRouter';
-import Routes from './routes';
 
 // ==============================|| APP - THEME, ROUTER, LOCAL  ||============================== //
 
