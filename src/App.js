@@ -18,7 +18,6 @@ const App = () => {
         <ThemeCustomization>
             <ScrollTop>
                 {/* <PrivateRouter> */}
-//                 <MainRouter />
                 <Routes />
                 {/* <Route exact path="/" element={<Login />} />
                 <Route path="/dashboard" element={authenticated ? <Routes /> : <Login />} />
