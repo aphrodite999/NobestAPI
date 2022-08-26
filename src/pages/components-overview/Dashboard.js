@@ -5,14 +5,14 @@ import { ChromeOutlined } from '@ant-design/icons';
 // react Hook
 import { useEffect } from 'react';
 
-function createData(no, api, status) {
-    return { no, api, status };
+function createData(no, api, total, status, count) {
+    return { no, api, total, status, count };
 }
 
 const rows = [
-    createData(1, 'support@nobest-api.net', 'on'),
-    createData(2, 'support@nobest-api.net', 'on'),
-    createData(3, 'support@nobest-api.net', 'on')
+    createData(1, 'support@nobest-api.net', 125, 'Accepted', 4),
+    createData(2, 'support@nobest-api.net', 200, 'Rejected', 5),
+    createData(3, 'support@nobest-api.net', 150, 'Accepted', 3)
 ];
 
 // ==============================|| MANAGER PAGE ||============================== //
@@ -27,12 +27,14 @@ const Dashboard = () => {
 
     return (
         <TableContainer component={Paper} sx={{ marginTop: '160px' }}>
-            <Table sx={{ minWidth: 450 }} aria-label="caption table">
+            <Table sx={{ minWidth: 650 }} aria-label="caption table">
                 <TableHead>
                     <TableRow>
                         <TableCell>Tracking No</TableCell>
-                        <TableCell>API Key</TableCell>
+                        <TableCell>Product Name</TableCell>
+                        <TableCell>Toast Order</TableCell>
                         <TableCell>Status</TableCell>
+                        <TableCell>Count</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -42,7 +44,9 @@ const Dashboard = () => {
                                 {row.no}
                             </TableCell>
                             <TableCell>{row.api}</TableCell>
+                            <TableCell>{row.total}</TableCell>
                             <TableCell>{row.status}</TableCell>
+                            <TableCell>{row.count}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
