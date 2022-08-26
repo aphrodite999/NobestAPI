@@ -9,6 +9,7 @@ import Login from './pages/authentication/Login';
 import './common_ts/firebase_auth';
 import { useGlobalContext } from './context';
 import MainRouter from './routes/MainRouter';
+import Routes from './routes';
 
 // ==============================|| APP - THEME, ROUTER, LOCAL  ||============================== //
 
@@ -18,7 +19,8 @@ const App = () => {
         <ThemeCustomization>
             <ScrollTop>
                 {/* <PrivateRouter> */}
-                <MainRouter />
+//                 <MainRouter />
+                <Routes />
                 {/* <Route exact path="/" element={<Login />} />
                 <Route path="/dashboard" element={authenticated ? <Routes /> : <Login />} />
                 <Route path="/picture" element={authenticated ? <Routes /> : <Login />} />
