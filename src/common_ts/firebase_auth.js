@@ -4,7 +4,7 @@ import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWith
 //auth
 const firebaseConfig = {
     apiKey: 'AIzaSyDz696hCdnL1LG9EXCDR8L8AxvF7Baj7qQ',
-    authDomain: 'nobest-api.netlify.app',
+    authDomain: 'nobest-api.firebaseapp.com',
     projectId: 'nobest-api',
     storageBucket: 'nobest-api.appspot.com',
     messagingSenderId: '684457114701',
