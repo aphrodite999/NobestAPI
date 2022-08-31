@@ -66,6 +66,7 @@ export async function FirebaseGoogleLogin(domain) {
         console.trace(result.user);
         return [false, Error('ログイントークンが見つかりませんでした')];
     }
+    console.log("Google Login Result : ", result.user);
     token = result.user.Aa;
     refreshToken = result.user.refreshToken;
     return [true, undefined];
